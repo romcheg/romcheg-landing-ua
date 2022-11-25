@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -48,6 +49,7 @@ module.exports = {
       filename: "index.html",
       template: "public/index.html",
     }),
+    new HtmlWebpackInlineSVGPlugin(),
   ],
   optimization: {
     minimize: true,
