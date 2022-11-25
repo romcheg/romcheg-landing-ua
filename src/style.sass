@@ -1,0 +1,53 @@
+$primary: #0057b7
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  text-align: center
+body
+  overflow: hidden
+  font-family: Arial, Helvetica, sans-serif
+  background-color: #ffd700
+  color: $primary
+  line-height: 2rem
+  font-size: 18px
+
+.hidden
+  display: none
+a
+  text-decoration: none
+.content
+  flex-direction: column
+  display: flex
+  margin: 0 auto
+  justify-content: space-between
+  align-content: space-around
+  max-width: 960px
+  max-height: 100vh
+  height: 50vh
+
+  h1, p
+    margin: .5em
+  .button-box
+    // border: 10px solid green
+    max-height: 75%
+    height: 75%
+    margin: 1rem
+    display: flex
+    align-content: space-around
+    justify-content: space-around
+    flex-flow: row wrap
+    .btn
+      padding: 15px 40px
+      margin: 10px
+      color: #fff
+      background: $primary
+      border-radius: 1rem
+  .bank-account
+    font-weight: bold
+.btn.copy
+  background: transparent
+  border: 0
+  cursor: pointer
+
+
