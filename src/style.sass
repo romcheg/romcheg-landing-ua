@@ -13,10 +13,18 @@ body
   line-height: 2rem
   font-size: 18px
 
+.language-selector
+  text-align: right
+  margin: 1rem
+  .active
+    font-weight: bold
+
 .hidden
   display: none
 a
   text-decoration: none
+  &:visited
+    color: $primary
 .content
   flex-direction: column
   display: flex
@@ -25,31 +33,36 @@ a
   align-content: space-around
   max-width: 960px
   max-height: 100vh
-  height: 50vh
+  // height: 50vh
 
   h1, p
     margin: .5em
   .button-box
     // border: 10px solid green
-    max-height: 75%
-    height: 75%
+    // max-height: 75%
+    // height: 75%
     margin: 1rem
     display: flex
     align-content: space-around
-    justify-content: space-around
+    justify-content: center
     flex-flow: row wrap
-    .btn
-      padding: 15px 40px
-      margin: 10px
-      color: #fff
-      background: $primary
-      border-radius: 1rem
   .bank-account
     font-weight: bold
-.btn.copy
-  margin: .5rem
+.btn-copy
+  margin-left: .5rem
   background: transparent
   border: 0
   cursor: pointer
+.btn
+  padding: 15px 40px
+  margin: 10px
+  color: #fff
+  background: $primary
+  border-radius: 1rem
 
-
+.mb-3
+  margin-bottom: 1rem !important
+.mt-3
+  margin-top: 1rem !important
+img
+  height: 1rem
