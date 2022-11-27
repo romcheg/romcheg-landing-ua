@@ -15,5 +15,5 @@ clipboard.on("success", () => {
   snackbar.classList.add("show")
   setTimeout(() => {
     snackbar.classList.remove("show")
-  }, 5000);
+  }, 2500);
 });
