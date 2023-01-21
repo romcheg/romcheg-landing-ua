@@ -17,3 +17,22 @@ clipboard.on("success", () => {
     snackbar.classList.remove("show")
   }, 2500);
 });
+
+
+const bankModal = document.getElementById("bankModal");
+const bankOpenModalBtn = document.getElementById("openBankModal");
+const bankCloseModalBtn = document.getElementById("closeBankModalBtn")
+
+bankOpenModalBtn.onclick = function() {
+  bankModal.style.display = "block";
+}
+
+bankCloseModalBtn.onclick = function() {
+  bankModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target != modal) {
+    bankModal.style.display = "none";
+  }
+}
