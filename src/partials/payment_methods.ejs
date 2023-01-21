@@ -1,0 +1,73 @@
+<div id="bankModal" class="modal">
+  <div class="modal-content">
+    <a href="#" data-close class="close">&times;</a>
+    <section>
+      <h1>
+        <%= modalTitle %>
+      </h1>
+      <table>
+        <tr>
+          <td>PLN</td>
+          <td class="btn-copy" data-clipboard-text="62249010570000990070933452">
+            62&nbsp;2490&nbsp;1057&nbsp;0000&nbsp;9900&nbsp;7093&nbsp;3452
+          </td>
+        </tr>
+        <tr>
+          <td>EUR</td>
+          <td class="btn-copy" data-clipboard-text="PL53249010570000990270933452">
+            PL53249010570000990270933452
+          </td>
+        </tr>
+        <tr>
+          <td>USD</td>
+          <td class="btn-copy" data-clipboard-text="PL09249010570000990170933452">PL09249010570000990170933452
+          </td>
+        </tr>
+        <tr>
+          <td>BIC/SWIFT</td>
+          <td class="btn-copy" data-clipboard-text="ALBPPLPW">ALBPPLPW
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <%= beneficiary %>
+          </td>
+          <td class="btn-copy" data-clipboard-text="Maksym Strukov">Maksym Strukov</td>
+        </tr>
+        <tr>
+          <td>
+            <%= address%>
+          </td>
+          <td class="btn-copy" data-clipboard-text="Jeleniogorska -1/3D, 60-179 Poznan, Poland">
+            Jeleniogorska&nbsp;-1/3D,
+            58-179&nbsp;Poznan,&nbsp;Poland
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</div>
+
+
+<div class="button-box">
+  <a href="#accounts" id="openBankModal" data-modal-target="bankModal" class="btn"><img src="./images/paypal.svg" /></a>
+  <a href="https://paypal.me/DariaGrebeniuk" target="_blank" class="btn"><img src="./images/paypal.svg" /></a>
+  <a href="https://send.monobank.ua/jar/7VxZXFL5Qn" target="_blank" class="btn"><img src="./images/monobank.svg"
+      height="16" /></a>
+  <a href="https://send.monobank.ua/jar/7VxZXFL5Qn" target="_blank" class="btn"><img
+      src="./images/google_pay.svg" /></a>
+  <a href="https://send.monobank.ua/jar/7VxZXFL5Qn" target="_blank" class="btn"><img src="./images/apple_pay.svg" /></a>
+  <a href="https://venmo.com/code?user_id=3694466770666984158&created=1671183217.693763" target="_blank"
+    class="btn"><img src="./images/venmo.svg" /></a>
+</div>
+<section>
+  <h2 class="btn-copy" data-clipboard-text="@DariaGrebeniuk">
+    PayPal*: @DariaGrebeniuk
+  </h2>
+  <div class="help">
+    <%=payPalHelp%>
+  </div>
+</section>
+<section>
+  <h2 class="btn-copy" data-clipboard-text="@romcheg">Revolut: @romcheg</h2>
+</section>
